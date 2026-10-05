@@ -1,149 +1,554 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Maheshwaran | Portfolio</title>
+    <title>Maheshwaran B | Data Engineer &amp; Snowflake Developer</title>
+    <meta name="description" content="Portfolio of Maheshwaran B, Results-driven Data Engineer and Snowflake Developer with nearly 4 years of experience in Cloud Data Warehousing, ETL/ELT pipelines, Snowflake Cortex AI, Airflow, dbt, and IICS." />
+    <meta name="keywords" content="Data Engineer, Snowflake Developer, Apache Airflow, dbt, IICS, AWS S3, Snowflake Cortex AI, Python, SQL" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <header>
-        <h1>Hi, I'm Maheshwaran</h1>
-        <p>Full-Stack Developer • Angular • Node.js</p>
+    <!-- Ambient Background Lighting -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
+    <!-- Floating Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-badge">MB</span>
+                <span class="logo-text">Maheshwaran<strong>.dev</strong></span>
+            </a>
+
+            <div class="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#highlights" class="nav-link">Architecture</a>
+                <a href="#education" class="nav-link">Education</a>
+            </div>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme" title="Toggle Light/Dark Theme">
+                    <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+                <a href="mailto:balumaheshwaran19@gmail.com" class="btn-primary">
+                    <span>Contact Me</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header / Hero Section -->
+    <header class="hero-section">
+        <div class="hero-content">
+            <div class="status-badge">
+                <span class="status-dot"></span>
+                <span>Available for Data Engineering &amp; Snowflake Roles</span>
+            </div>
+
+            <h1 class="hero-title">
+                Hi, I'm <span class="gradient-text">Maheshwaran B</span>
+            </h1>
+
+            <p class="hero-role">
+                Data Engineer &bull; Snowflake Developer &bull; Cloud ETL/ELT Architect
+            </p>
+
+            <p class="hero-bio">
+                Specializing in architecting high-throughput cloud data warehouses, real-time streaming &amp; batch pipelines, and integrating <strong>Snowflake Cortex AI</strong> into scalable enterprise workflows.
+            </p>
+
+            <!-- Quick Contact Pills -->
+            <div class="contact-links">
+                <span class="contact-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    Chennai, Tamil Nadu
+                </span>
+
+                <button class="contact-item link-item" onclick="copyToClipboard('balumaheshwaran19@gmail.com', 'Email copied to clipboard!')" title="Click to copy email">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    <span>balumaheshwaran19@gmail.com</span>
+                    <span class="copy-indicator">Copy</span>
+                </button>
+
+                <a href="tel:8098597405" class="contact-item link-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    8098597405
+                </a>
+
+                <a href="https://www.linkedin.com/in/mahesh-waran-ab3790315" target="_blank" rel="noopener noreferrer" class="contact-item link-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    LinkedIn
+                </a>
+            </div>
+
+            <!-- Stats / Highlights Row -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-value">~4 Years</span>
+                    <span class="stat-label">Cloud Data Engineering Experience</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value">Snowflake</span>
+                    <span class="stat-label">Streams, Tasks, Snowpipe &amp; Cortex AI</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value">ETL / ELT</span>
+                    <span class="stat-label">dbt &bull; Apache Airflow &bull; Informatica IICS</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value">Multi-Cloud</span>
+                    <span class="stat-label">AWS S3, Oracle, Postgres &amp; MSSQL</span>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <section id="about" class="glow-section hover-shine">
-        <h2>About Me</h2>
-        <p>
-            Hi, I'm <strong>Maheshwaran B</strong>, a passionate <strong>Full Stack Developer</strong>
-            with over <strong>3 years of experience</strong> in building responsive,
-            scalable, and high-performance web applications using
-            <strong>Angular 16, TypeScript, Node.js, and MS SQL Server</strong>.
-        </p>
-        <p>
-            I started my career as a <strong>Java Full Stack Developer</strong>
-            at First Line Infotech Pvt Ltd (Sep 2022 – Oct 2024), where I developed
-            enterprise-level modules and trained junior developers.
-            I’m currently working at <strong>Clubman Hospitality Software Solutions Pvt Ltd</strong>
-            as a Full Stack Angular Developer, contributing to complex, production-ready systems.
-        </p>
-    </section>
+    <main>
+        <!-- Professional Summary Section -->
+        <section id="about" class="glow-section hover-shine">
+            <div class="section-header">
+                <span class="section-tag">Overview</span>
+                <h2>Professional Summary</h2>
+            </div>
+            
+            <div class="summary-body">
+                <p>
+                    Results-driven <strong>Data Engineer and Snowflake Developer</strong> with nearly <strong>4 years of hands-on experience</strong> in cloud data warehousing, ETL/ELT pipeline development, and data migration. Proven expertise in architecting scalable solutions using <strong>Snowflake</strong> (Streams, Tasks, Snowpipe), <strong>Apache Airflow</strong>, <strong>dbt</strong>, and <strong>Informatica Intelligent Cloud Services (IICS)</strong>.
+                </p>
+                <p>
+                    Adept at transforming raw enterprise data into analytics-ready datasets and optimizing database performance across <strong>BFSI, Healthcare, and Ed-Tech</strong> domains. Strong background in writing complex SQL, managing cloud integrations with <strong>AWS S3</strong>, and leveraging <strong>Snowflake Cortex AI</strong> to drive intelligent, data-backed business decisions.
+                </p>
+            </div>
 
-    <section id="skills" class="glow-section hover-shine">
-        <h2>Technical Skills</h2>
-        <ul class="skills-list">
-            <li>Angular 16</li>
-            <li>TypeScript</li>
-            <li>JavaScript</li>
-            <li>Node.js</li>
-            <li>MS SQL Server</li>
-            <li>PostgreSQL</li>
-            <li>Java 8</li>
-            <li>Git</li>
-        </ul>
-    </section>
-    <section id="experience" class="experience-section">
-        <h2>Working Experience</h2>
+            <div class="domain-pills">
+                <span class="domain-pill">🏦 BFSI Domain</span>
+                <span class="domain-pill">🏥 Healthcare Domain</span>
+                <span class="domain-pill">🎓 Ed-Tech Domain</span>
+                <span class="domain-pill">🤖 Snowflake Cortex AI</span>
+                <span class="domain-pill">🔄 Zero-Copy Cloning &amp; Time Travel</span>
+            </div>
+        </section>
 
-        <div class="timeline">
+        <!-- Technical Skills Section -->
+        <section id="skills" class="glow-section hover-shine">
+            <div class="section-header">
+                <span class="section-tag">Capabilities</span>
+                <h2>Technical Skills</h2>
+            </div>
 
-            <!-- Clubman -->
-            <div class="timeline-item">
-                <div class="dot"></div>
-
-                <div class="content">
-                    <div class="header-row">
-                        <h3>CLUBMAN HOSPITALITY SOFTWARE SOLUTIONS PVT. LTD.</h3>
-                        <span class="date"><b>Oct 2024 – Present</b></span>
+            <div class="skills-grid">
+                <!-- Cloud Data Warehouse -->
+                <div class="skill-category-card">
+                    <div class="category-title-row">
+                        <div class="category-icon snowflake-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20M12 2v20M4.93 4.93l14.14 14.14M4.93 19.07l14.14-14.14M8 4l4 4 4-4M8 20l4-4 4-4M4 8l4 4-4 4M20 8l-4 4 4 4"></path></svg>
+                        </div>
+                        <h3>Cloud Data Warehouse</h3>
                     </div>
+                    <p class="category-headline">Snowflake Ecosystem &amp; Cortex AI</p>
+                    <ul class="skills-list">
+                        <li>Virtual Warehouses</li>
+                        <li>Stages</li>
+                        <li>Streams &amp; Tasks</li>
+                        <li>Snowpipe</li>
+                        <li>Secure Views</li>
+                        <li>Zero-Copy Cloning</li>
+                        <li>Time Travel (Up to 90 Days)</li>
+                        <li>Fail-Safe</li>
+                        <li>Data Sharing</li>
+                        <li>Snowflake Cortex AI</li>
+                    </ul>
+                </div>
 
-                    <p class="role">
-                        <b>Angular Full Stack Developer (Angular 16, TypeScript, Node.js, MS SQL)</b>
-                    </p>
+                <!-- Databases -->
+                <div class="skill-category-card">
+                    <div class="category-title-row">
+                        <div class="category-icon db-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                        </div>
+                        <h3>Databases</h3>
+                    </div>
+                    <p class="category-headline">Enterprise Relational &amp; Cloud DBs</p>
+                    <ul class="skills-list">
+                        <li>Oracle SQL</li>
+                        <li>PostgreSQL</li>
+                        <li>Microsoft SQL Server (MSSQL)</li>
+                    </ul>
+                </div>
 
-                    <ul>
-                        <li>Developing and maintaining enterprise-grade web applications using Angular 16 and Node.js.
-                        </li>
-                        <li>Designed and delivered internal modules including Locker Management and Issue Tracking
-                            systems.</li>
-                        <li>Optimized complex SQL queries to improve performance and data reliability.</li>
+                <!-- ETL / ELT & Orchestration -->
+                <div class="skill-category-card">
+                    <div class="category-title-row">
+                        <div class="category-icon pipeline-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                        </div>
+                        <h3>ETL/ELT &amp; Orchestration</h3>
+                    </div>
+                    <p class="category-headline">Automated Data Pipelines &amp; Workflows</p>
+                    <ul class="skills-list">
+                        <li>dbt (Models, Incremental, Snapshots)</li>
+                        <li>Apache Airflow (DAGs, Operators, Sensors)</li>
+                        <li>Informatica Cloud Services (IICS)</li>
+                    </ul>
+                </div>
+
+                <!-- Cloud Platforms -->
+                <div class="skill-category-card">
+                    <div class="category-title-row">
+                        <div class="category-icon cloud-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+                        </div>
+                        <h3>Cloud Platforms</h3>
+                    </div>
+                    <p class="category-headline">Storage &amp; Cloud Security</p>
+                    <ul class="skills-list">
+                        <li>AWS S3 (Buckets, Policies, Staging)</li>
+                        <li>AWS IAM (Roles, Policies &amp; Access)</li>
+                    </ul>
+                </div>
+
+                <!-- Programming & Scripting -->
+                <div class="skill-category-card">
+                    <div class="category-title-row">
+                        <div class="category-icon code-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                        </div>
+                        <h3>Programming &amp; Scripting</h3>
+                    </div>
+                    <p class="category-headline">Transformations &amp; Query Tuning</p>
+                    <ul class="skills-list">
+                        <li>Advanced SQL (CTEs, Window Functions)</li>
+                        <li>Python Basics &amp; Scripting</li>
+                        <li>PySpark Distributed Processing</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+
+                <!-- Tools & Version Control -->
+                <div class="skill-category-card">
+                    <div class="category-title-row">
+                        <div class="category-icon tool-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                        </div>
+                        <h3>Tools &amp; Version Control</h3>
+                    </div>
+                    <p class="category-headline">Database IDEs &amp; Collaborative Dev</p>
+                    <ul class="skills-list">
+                        <li>Oracle SQL Developer</li>
+                        <li>GitHub</li>
                     </ul>
                 </div>
             </div>
+        </section>
 
-            <!-- Firstline -->
-            <div class="timeline-item">
-                <div class="dot"></div>
+        <!-- Professional Experience Section -->
+        <section id="experience" class="experience-section">
+            <div class="section-header">
+                <span class="section-tag">Career</span>
+                <h2>Professional Experience</h2>
+            </div>
 
-                <div class="content">
+            <div class="experience-list">
+
+                <!-- Experience 1: Clubman Software Solutions -->
+                <div class="glow-section hover-shine experience-card">
                     <div class="header-row">
-                        <h3>FIRSTLINE INFOTECH PVT. LTD.</h3>
-                        <span class="date"><b>Sep 2022 – Oct 2024</b></span>
+                        <div>
+                            <h3 class="company-title">Clubman Software Solutions Pvt Ltd</h3>
+                            <p class="role-title">Data Engineer</p>
+                        </div>
+                        <div class="date-badge">
+                            <span>2024 &ndash; Present</span>
+                        </div>
                     </div>
 
-                    <p class="role">
-                        <b>Java Full Stack Developer (J2EE, Java, JavaScript, PostgreSQL)</b>
-                    </p>
-
-                    <ul>
-                        <li>Developed and maintained enterprise web applications using Java (J2EE) and JavaScript.</li>
-                        <li>Designed and implemented efficient database schemas using PostgreSQL.</li>
-                        <li>Built optimized front-end components with HTML, CSS, and JavaScript.</li>
-                        <li>Collaborated with cross-functional teams to deliver scalable and maintainable solutions.
+                    <ul class="experience-bullets">
+                        <li>
+                            <strong>Design and develop scalable Snowflake cloud data warehouse solutions</strong> to support enterprise analytics and reporting.
+                        </li>
+                        <li>
+                            <strong>Build and schedule automated ETL workflows</strong> using Apache Airflow DAGs, Operators, and Sensors for seamless task dependency management.
+                        </li>
+                        <li>
+                            <strong>Develop and manage dbt models</strong>, incremental models, and snapshots to transform raw enterprise data into analytics-ready datasets.
+                        </li>
+                        <li>
+                            <strong>Leverage Snowflake Cortex AI functions</strong> to enrich business data, generate intelligent LLM-driven summaries, and seamlessly integrate AI capabilities directly into data pipelines.
+                        </li>
+                        <li>
+                            <strong>Developed and optimized distributed data processing pipelines</strong> utilizing PySpark and Python for complex, large-scale data transformations.
+                        </li>
+                        <li>
+                            <strong>Leveraged Snowflake Time Travel</strong> to query historical data states, execute point-in-time zero-copy cloning, and instantly recover accidentally modified or dropped objects without requiring traditional backups, utilizing retention windows of up to 90 days.
                         </li>
                     </ul>
                 </div>
+
+                <!-- Experience 2: Firstline Infotech -->
+                <div class="glow-section hover-shine experience-card">
+                    <div class="header-row">
+                        <div>
+                            <h3 class="company-title">Firstline Infotech Pvt Ltd</h3>
+                            <p class="role-title">Data Engineer</p>
+                        </div>
+                        <div class="date-badge">
+                            <span>2022 &ndash; 2024</span>
+                        </div>
+                    </div>
+
+                    <ul class="experience-bullets">
+                        <li>
+                            <strong>Architected End-to-End Cloud Integrations:</strong> Designed and implemented comprehensive data integration solutions using Informatica Intelligent Cloud Services (IICS), enabling seamless, secure, and scalable data migration across heterogeneous on-premise and cloud-based systems.
+                        </li>
+                        <li>
+                            <strong>Orchestrated Complex Workflows in IICS:</strong> Developed and managed intricate data mappings, synchronization tasks, and automated task flows to streamline business processes, ensuring high data quality and consistency during large-scale migrations.
+                        </li>
+                        <li>
+                            <strong>Engineered Automated Cloud Pipelines:</strong> Built secure, high-volume data ingestion pipelines by integrating Snowflake with AWS S3, utilizing cloud storage best practices to automate data staging and loading processes reliably.
+                        </li>
+                        <li>
+                            <strong>Optimized Pipeline &amp; Query Performance:</strong> Proactively monitored and troubleshot data pipelines and warehousing environments, applying performance tuning techniques to reduce data load times, resolve bottlenecks, and ensure system reliability.
+                        </li>
+                        <li>
+                            <strong>Executed Advanced Data Transformations:</strong> Authored highly complex SQL scripts—including Common Table Expressions (CTEs), advanced joins, window/analytical functions, stored procedures, and views—across both Oracle and Snowflake to implement complex business logic and prepare data for downstream analytics.
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Key Engineering Highlights / Architecture Showcase -->
+        <section id="highlights" class="glow-section hover-shine">
+            <div class="section-header">
+                <span class="section-tag">Key Solutions</span>
+                <h2>Data Engineering Highlights</h2>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Highlight 1 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon-box">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                        </div>
+                        <span class="project-category">Cloud Data Warehouse &bull; AI</span>
+                    </div>
+
+                    <h3>Enterprise Snowflake Data Warehouse &amp; Cortex AI Pipeline</h3>
+                    <p>
+                        Architected scalable Snowflake cloud data warehousing solutions to power enterprise reporting. Designed modular dbt transformations (incremental models, snapshots) orchestrated by automated Apache Airflow DAGs. Embedded <strong>Snowflake Cortex AI LLM functions</strong> directly into ELT pipelines for automated unstructured text summarization and enriched intelligence.
+                    </p>
+                    
+                    <div class="project-tags">
+                        <span class="project-tag">Snowflake</span>
+                        <span class="project-tag">Cortex AI</span>
+                        <span class="project-tag">Apache Airflow</span>
+                        <span class="project-tag">dbt</span>
+                        <span class="project-tag">PySpark</span>
+                    </div>
+                </div>
+
+                <!-- Highlight 2 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon-box">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"></path><path d="M12 12v9"></path><path d="m8 17 4 4 4-4"></path></svg>
+                        </div>
+                        <span class="project-category">Cloud Storage &bull; Ingestion</span>
+                    </div>
+
+                    <h3>Automated AWS S3 to Snowflake Ingestion Pipeline</h3>
+                    <p>
+                        Built high-volume, automated cloud data ingestion workflows integrating <strong>AWS S3</strong> with Snowflake external stages and Snowpipe. Enforced enterprise data protection utilizing <strong>Snowflake Time Travel (up to 90 days)</strong> and zero-copy cloning for zero-downtime historical analysis, backup-free disaster recovery, and agile dev/test staging.
+                    </p>
+
+                    <div class="project-tags">
+                        <span class="project-tag">AWS (S3, IAM)</span>
+                        <span class="project-tag">Snowflake Stages</span>
+                        <span class="project-tag">Snowpipe</span>
+                        <span class="project-tag">Time Travel</span>
+                        <span class="project-tag">Zero-Copy Cloning</span>
+                    </div>
+                </div>
+
+                <!-- Highlight 3 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon-box">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                        </div>
+                        <span class="project-category">ETL Orchestration &bull; Migration</span>
+                    </div>
+
+                    <h3>Heterogeneous Cloud Migration &amp; Workflows (IICS)</h3>
+                    <p>
+                        Designed and implemented enterprise-wide data integration using <strong>Informatica Intelligent Cloud Services (IICS)</strong> across diverse on-premise and cloud database engines (Oracle SQL, PostgreSQL, MSSQL). Developed complex taskflows, synchronization tasks, and optimized SQL with advanced CTEs and analytical window functions for peak query efficiency.
+                    </p>
+
+                    <div class="project-tags">
+                        <span class="project-tag">Informatica IICS</span>
+                        <span class="project-tag">Oracle SQL</span>
+                        <span class="project-tag">PostgreSQL</span>
+                        <span class="project-tag">MSSQL</span>
+                        <span class="project-tag">CTEs &amp; Joins</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="glow-section hover-shine">
+            <div class="section-header">
+                <span class="section-tag">Academic Background</span>
+                <h2>Education</h2>
             </div>
 
-        </div>
-    </section>
+            <div class="education-card">
+                <div class="education-icon-box">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                </div>
+                <div class="education-info">
+                    <div class="edu-heading-row">
+                        <h3>Nandha College of Technology</h3>
+                        <span class="date-badge">2016 &ndash; 2020</span>
+                    </div>
+                    <p class="degree">Bachelor of Engineering in Computer Science Engineering</p>
+                    <p class="edu-details">Graduated with a strong foundation in Database Management Systems (DBMS), Data Structures, Algorithms, Computer Networks, and Software Engineering principles.</p>
+                </div>
+            </div>
+        </section>
 
+        <!-- Connect / CTA Section -->
+        <section id="contact" class="glow-section hover-shine cta-section">
+            <div class="cta-inner">
+                <span class="section-tag">Get In Touch</span>
+                <h2>Let's Build Robust Data Solutions Together</h2>
+                <p>
+                    Looking for a hands-on Data Engineer &amp; Snowflake Developer to design, optimize, or scale your cloud data infrastructure? Feel free to reach out directly.
+                </p>
 
-    <section id="project" class="glow-section hover-shine">
-        <h2>Featured Project's</h2>
-        <div class="project-card">
-            <h3>Locker Management Module — Clubman Hospitality Services</h3>
-            <p>
-                Developed a complete locker management module from scratch
-                (Frontend: Angular 16, Backend: Node.js, DB: MS SQL Server).
-                It automates locker allocation, usage tracking, and access control.
-            </p>
-        </div>
-        <div class="project-card">
-            <h3>Issue Tracking & Club Operations Module — Clubman Hospitality Services</h3>
-            <p>
-                Designed and developed a complete issue tracking module from scratch
-                within a tight timeline.
-                Built using <strong>Angular 16</strong>, <strong>Node.js</strong>, and
-                <strong>MS SQL Server</strong>.
-            </p>
-            <p>
-                The module enables clubs to log operational issues, map them to the
-                responsible department, assign owners, track real-time status, and
-                maintain a full historical audit trail for every issue until resolution.
-            </p>
-            <p>
-                This system significantly improved issue visibility, accountability,
-                and turnaround time across departments, and is now actively used in
-                production.
-            </p>
-        </div>
+                <div class="cta-buttons">
+                    <a href="mailto:balumaheshwaran19@gmail.com" class="btn-primary cta-btn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <span>Send Email</span>
+                    </a>
+                    
+                    <a href="https://www.linkedin.com/in/mahesh-waran-ab3790315" target="_blank" rel="noopener noreferrer" class="btn-secondary cta-btn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        <span>Connect on LinkedIn</span>
+                    </a>
 
-    </section>
+                    <a href="tel:8098597405" class="btn-secondary cta-btn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <span>+91 8098597405</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-
+    <!-- Footer -->
     <footer>
-        <p>
-            © 2025 Maheshwaran
-            &nbsp;•&nbsp;
-            <a href="https://www.linkedin.com/in/mahesh-waran-ab3790315" target="_blank" class="linkedin">
-                LinkedIn
-            </a>
-        </p>
+        <div class="footer-content">
+            <p class="footer-copy">
+                &copy; <span id="year">2026</span> <strong>Maheshwaran B</strong> &bull; Crafted with precision for Data &amp; Cloud Excellence
+            </p>
+            <div class="footer-links">
+                <a href="mailto:balumaheshwaran19@gmail.com">balumaheshwaran19@gmail.com</a>
+                <span class="sep">&bull;</span>
+                <a href="https://www.linkedin.com/in/mahesh-waran-ab3790315" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <span class="sep">&bull;</span>
+                <a href="tel:8098597405">+91 8098597405</a>
+            </div>
+        </div>
     </footer>
 
+    <!-- Toast Notification -->
+    <div id="toast" class="toast" role="alert">Email copied to clipboard!</div>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
+
+    <!-- Script for theme toggle, clipboard & interactions -->
+    <script>
+        // Update copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Theme Toggle Logic
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const htmlElement = document.documentElement;
+
+        // Check stored theme or system preference
+        const savedTheme = localStorage.getItem('portfolio-theme') || 
+            (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        htmlElement.setAttribute('data-theme', savedTheme);
+
+        themeToggleBtn.addEventListener('click', () => {
+            const currentTheme = htmlElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            htmlElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('portfolio-theme', newTheme);
+        });
+
+        // Copy to clipboard with toast
+        function copyToClipboard(text, message) {
+            navigator.clipboard.writeText(text).then(() => {
+                showToast(message || 'Copied to clipboard!');
+            }).catch(() => {
+                const textarea = document.createElement('textarea');
+                textarea.value = text;
+                document.body.appendChild(textarea);
+                textarea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textarea);
+                showToast(message || 'Copied to clipboard!');
+            });
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 2500);
+        }
+
+        // Back to top & navbar shadow
+        const backToTopBtn = document.getElementById('back-to-top');
+        const navbar = document.getElementById('navbar');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('visible');
+                navbar.classList.add('scrolled');
+            } else {
+                backToTopBtn.classList.remove('visible');
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
 </body>
 
 </html>
